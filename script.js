@@ -64,8 +64,8 @@ async function startHearingAid() {
     // 1. Get Microphone
     stream = await navigator.mediaDevices.getUserMedia({
       audio: {
-        echoCancellation: false,
-        noiseSuppression: false,
+        echoCancellation: true,
+        noiseSuppression: true,
         autoGainControl:  false,
         sampleRate: 48000
       }
